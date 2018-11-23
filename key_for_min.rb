@@ -10,6 +10,7 @@ def key_for_min_value(name_hash)
     name_hash.collect do |k, v|
       min_hash_value, min_hash_key = v, k unless v < min_hash_value
     end
-    return min_hash_key
+    
   end
+  return min_hash_key
 end
